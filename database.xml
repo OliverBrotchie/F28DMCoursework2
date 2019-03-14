@@ -1,5 +1,4 @@
 <?xml version="1.0"?>
-<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <database name="DB">
 	<table_structure name="advert">
 		<field Field="advertID" Type="int(6)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
@@ -414,7 +413,7 @@
 		<field name="employeeID">10</field>
 		<field name="personID">10</field>
 		<field name="workEmail">jet@company.com</field>
-		<field name="managerID" xsi:nil="true" />
+		<field name="managerID"/>
 	</row>
 	</table_data>
 	<table_structure name="invoice">
@@ -439,42 +438,42 @@
 	<row>
 		<field name="campaignID">3</field>
 		<field name="clientID">3</field>
-		<field name="cost" xsi:nil="true" />
+		<field name="cost"/>
 	</row>
 	<row>
 		<field name="campaignID">4</field>
 		<field name="clientID">4</field>
-		<field name="cost" xsi:nil="true" />
+		<field name="cost"/>
 	</row>
 	<row>
 		<field name="campaignID">5</field>
 		<field name="clientID">5</field>
-		<field name="cost" xsi:nil="true" />
+		<field name="cost"/>
 	</row>
 	<row>
 		<field name="campaignID">6</field>
 		<field name="clientID">6</field>
-		<field name="cost" xsi:nil="true" />
+		<field name="cost"/>
 	</row>
 	<row>
 		<field name="campaignID">7</field>
 		<field name="clientID">7</field>
-		<field name="cost" xsi:nil="true" />
+		<field name="cost"/>
 	</row>
 	<row>
 		<field name="campaignID">8</field>
 		<field name="clientID">8</field>
-		<field name="cost" xsi:nil="true" />
+		<field name="cost"/>
 	</row>
 	<row>
 		<field name="campaignID">9</field>
 		<field name="clientID">9</field>
-		<field name="cost" xsi:nil="true" />
+		<field name="cost"/>
 	</row>
 	<row>
 		<field name="campaignID">10</field>
 		<field name="clientID">10</field>
-		<field name="cost" xsi:nil="true" />
+		<field name="cost"/>
 	</row>
 	</table_data>
 	<table_structure name="magazine">
@@ -966,4 +965,4 @@
 	</row>
 	</table_data>
 </database>
-</mysqldump>
+
