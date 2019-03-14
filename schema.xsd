@@ -9,6 +9,9 @@
                 <xs:element name="companyID" type="xs:positiveInteger" minOccus="1" maxOccurs="1"/>
                 <xs:element name="form" type="xs:string" maxOccurs="unbounded"/>
             </xs:sequence>
+        <xsd:keyref id="advert" name="advertID" refer="advert"/>
+        <xsd:keyref id="person" name="personID" refer="person"/>
+        <xsd:keyref id="company" name="companyID" refer="company"/>
         </xs:complexType>
     </xs:element> 
     <xs:element name="campaign" maxOccurs="unbounded">
@@ -19,6 +22,8 @@
                 <xs:element name="startDarte" type="xs:date" maxOccurs="1"/>
                 <xs:element name="endDate" type="xs:date" maxOccurs="unbounded"/>
             </xs:sequence>
+        <xsd:keyref id="campaign" name="campaignID" refer="campaign"/>
+        <xsd:keyref id="client" name="clientID" refer="client"/>
     </xs:complexType>
     </xs:element>
 </xs:schema>
