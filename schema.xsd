@@ -1,0 +1,160 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="mysqldump">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="database">
+          <xs:complexType>
+            <xs:choice maxOccurs="unbounded" minOccurs="0">
+              <xs:element name="table_structure">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="field" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="Field" use="optional"/>
+                            <xs:attribute type="xs:string" name="Type" use="optional"/>
+                            <xs:attribute type="xs:string" name="Null" use="optional"/>
+                            <xs:attribute type="xs:string" name="Key" use="optional"/>
+                            <xs:attribute type="xs:string" name="Extra" use="optional"/>
+                            <xs:attribute type="xs:string" name="Comment" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="key" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="Table" use="optional"/>
+                            <xs:attribute type="xs:byte" name="Non_unique" use="optional"/>
+                            <xs:attribute type="xs:string" name="Key_name" use="optional"/>
+                            <xs:attribute type="xs:byte" name="Seq_in_index" use="optional"/>
+                            <xs:attribute type="xs:string" name="Column_name" use="optional"/>
+                            <xs:attribute type="xs:string" name="Collation" use="optional"/>
+                            <xs:attribute type="xs:byte" name="Cardinality" use="optional"/>
+                            <xs:attribute type="xs:string" name="Null" use="optional"/>
+                            <xs:attribute type="xs:string" name="Index_type" use="optional"/>
+                            <xs:attribute type="xs:string" name="Comment" use="optional"/>
+                            <xs:attribute type="xs:string" name="Index_comment" use="optional"/>
+                            <xs:attribute type="xs:string" name="Visible" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="options">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="Name"/>
+                            <xs:attribute type="xs:string" name="Engine"/>
+                            <xs:attribute type="xs:byte" name="Version"/>
+                            <xs:attribute type="xs:string" name="Row_format"/>
+                            <xs:attribute type="xs:byte" name="Rows"/>
+                            <xs:attribute type="xs:short" name="Avg_row_length"/>
+                            <xs:attribute type="xs:short" name="Data_length"/>
+                            <xs:attribute type="xs:byte" name="Max_data_length"/>
+                            <xs:attribute type="xs:int" name="Index_length"/>
+                            <xs:attribute type="xs:byte" name="Data_free"/>
+                            <xs:attribute type="xs:byte" name="Auto_increment"/>
+                            <xs:attribute type="xs:string" name="Create_time"/>
+                            <xs:attribute type="xs:string" name="Update_time"/>
+                            <xs:attribute type="xs:string" name="Collation"/>
+                            <xs:attribute type="xs:string" name="Create_options"/>
+                            <xs:attribute type="xs:string" name="Comment"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="name"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="table_data">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="row" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="field" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="name" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="field" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="Field" use="optional"/>
+                            <xs:attribute type="xs:string" name="Type" use="optional"/>
+                            <xs:attribute type="xs:string" name="Null" use="optional"/>
+                            <xs:attribute type="xs:string" name="Key" use="optional"/>
+                            <xs:attribute type="xs:string" name="Extra" use="optional"/>
+                            <xs:attribute type="xs:string" name="Comment" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="key" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="Table" use="optional"/>
+                            <xs:attribute type="xs:byte" name="Non_unique" use="optional"/>
+                            <xs:attribute type="xs:string" name="Key_name" use="optional"/>
+                            <xs:attribute type="xs:byte" name="Seq_in_index" use="optional"/>
+                            <xs:attribute type="xs:string" name="Column_name" use="optional"/>
+                            <xs:attribute type="xs:string" name="Collation" use="optional"/>
+                            <xs:attribute type="xs:byte" name="Cardinality" use="optional"/>
+                            <xs:attribute type="xs:string" name="Null" use="optional"/>
+                            <xs:attribute type="xs:string" name="Index_type" use="optional"/>
+                            <xs:attribute type="xs:string" name="Comment" use="optional"/>
+                            <xs:attribute type="xs:string" name="Index_comment" use="optional"/>
+                            <xs:attribute type="xs:string" name="Visible" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="options" minOccurs="0">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="Name"/>
+                            <xs:attribute type="xs:string" name="Engine"/>
+                            <xs:attribute type="xs:byte" name="Version"/>
+                            <xs:attribute type="xs:string" name="Row_format"/>
+                            <xs:attribute type="xs:byte" name="Rows"/>
+                            <xs:attribute type="xs:short" name="Avg_row_length"/>
+                            <xs:attribute type="xs:short" name="Data_length"/>
+                            <xs:attribute type="xs:byte" name="Max_data_length"/>
+                            <xs:attribute type="xs:short" name="Index_length"/>
+                            <xs:attribute type="xs:byte" name="Data_free"/>
+                            <xs:attribute type="xs:byte" name="Auto_increment"/>
+                            <xs:attribute type="xs:string" name="Create_time"/>
+                            <xs:attribute type="xs:string" name="Update_time"/>
+                            <xs:attribute type="xs:string" name="Collation"/>
+                            <xs:attribute type="xs:string" name="Create_options"/>
+                            <xs:attribute type="xs:string" name="Comment"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="name" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:choice>
+            <xs:attribute type="xs:string" name="name"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
