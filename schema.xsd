@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="https://github.com/OliverBrotchie/F28DMCoursework2/blob/master/database.xml">
+    <xs:element name="advert" maxOccurs="unbounded">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="advertID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="personID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="companyID" type="xs:positiveInteger" minOccus="1" maxOccurs="1"/>
+                <xs:element name="form" type="xs:string" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element> 
+    <xs:element name="campaign" maxOccurs="unbounded">
+    <xs:complexType>
+        <xs:sequence>
+                <xs:element name="campaignID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="clientID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="startDarte" type="xs:date" maxOccurs="1"/>
+                <xs:element name="endDate" type="xs:date" maxOccurs="unbounded"/>
+            </xs:sequence>
+    </xs:complexType>
+    </xs:element>
+</xs:schema>
