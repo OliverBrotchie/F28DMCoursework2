@@ -1,0 +1,969 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="DB">
+	<table_structure name="advert">
+		<field Field="advertID" Type="int(6)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="companyID" Type="int(6)" Null="NO" Key="MUL" Extra="" Comment="" />
+		<field Field="campaignID" Type="int(6)" Null="NO" Key="MUL" Extra="" Comment="" />
+		<field Field="form" Type="varchar(5)" Null="NO" Key="" Extra="" Comment="" />
+		<key Table="advert" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="advertID" Collation="A" Cardinality="25" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<key Table="advert" Non_unique="1" Key_name="campaignID" Seq_in_index="1" Column_name="campaignID" Collation="A" Cardinality="10" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<key Table="advert" Non_unique="1" Key_name="companyID" Seq_in_index="1" Column_name="companyID" Collation="A" Cardinality="10" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<options Name="advert" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="25" Avg_row_length="655" Data_length="16384" Max_data_length="0" Index_length="32768" Data_free="0" Auto_increment="26" Create_time="2019-03-14 15:17:52" Update_time="2019-03-14 15:17:54" Collation="latin1_swedish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="advert">
+	<row>
+		<field name="advertID">1</field>
+		<field name="companyID">1</field>
+		<field name="campaignID">1</field>
+		<field name="form">mag</field>
+	</row>
+	<row>
+		<field name="advertID">2</field>
+		<field name="companyID">5</field>
+		<field name="campaignID">1</field>
+		<field name="form">web</field>
+	</row>
+	<row>
+		<field name="advertID">3</field>
+		<field name="companyID">3</field>
+		<field name="campaignID">1</field>
+		<field name="form">tv</field>
+	</row>
+	<row>
+		<field name="advertID">4</field>
+		<field name="companyID">2</field>
+		<field name="campaignID">1</field>
+		<field name="form">radio</field>
+	</row>
+	<row>
+		<field name="advertID">5</field>
+		<field name="companyID">2</field>
+		<field name="campaignID">2</field>
+		<field name="form">tv</field>
+	</row>
+	<row>
+		<field name="advertID">6</field>
+		<field name="companyID">2</field>
+		<field name="campaignID">2</field>
+		<field name="form">radio</field>
+	</row>
+	<row>
+		<field name="advertID">7</field>
+		<field name="companyID">9</field>
+		<field name="campaignID">2</field>
+		<field name="form">mag</field>
+	</row>
+	<row>
+		<field name="advertID">8</field>
+		<field name="companyID">8</field>
+		<field name="campaignID">3</field>
+		<field name="form">web</field>
+	</row>
+	<row>
+		<field name="advertID">9</field>
+		<field name="companyID">10</field>
+		<field name="campaignID">3</field>
+		<field name="form">mag</field>
+	</row>
+	<row>
+		<field name="advertID">10</field>
+		<field name="companyID">3</field>
+		<field name="campaignID">3</field>
+		<field name="form">tv</field>
+	</row>
+	<row>
+		<field name="advertID">11</field>
+		<field name="companyID">4</field>
+		<field name="campaignID">4</field>
+		<field name="form">web</field>
+	</row>
+	<row>
+		<field name="advertID">12</field>
+		<field name="companyID">2</field>
+		<field name="campaignID">4</field>
+		<field name="form">radio</field>
+	</row>
+	<row>
+		<field name="advertID">13</field>
+		<field name="companyID">3</field>
+		<field name="campaignID">5</field>
+		<field name="form">tv</field>
+	</row>
+	<row>
+		<field name="advertID">14</field>
+		<field name="companyID">7</field>
+		<field name="campaignID">6</field>
+		<field name="form">web</field>
+	</row>
+	<row>
+		<field name="advertID">15</field>
+		<field name="companyID">1</field>
+		<field name="campaignID">6</field>
+		<field name="form">mag</field>
+	</row>
+	<row>
+		<field name="advertID">16</field>
+		<field name="companyID">2</field>
+		<field name="campaignID">6</field>
+		<field name="form">radio</field>
+	</row>
+	<row>
+		<field name="advertID">17</field>
+		<field name="companyID">3</field>
+		<field name="campaignID">6</field>
+		<field name="form">tv</field>
+	</row>
+	<row>
+		<field name="advertID">18</field>
+		<field name="companyID">2</field>
+		<field name="campaignID">7</field>
+		<field name="form">radio</field>
+	</row>
+	<row>
+		<field name="advertID">19</field>
+		<field name="companyID">1</field>
+		<field name="campaignID">7</field>
+		<field name="form">mag</field>
+	</row>
+	<row>
+		<field name="advertID">20</field>
+		<field name="companyID">3</field>
+		<field name="campaignID">8</field>
+		<field name="form">tv</field>
+	</row>
+	<row>
+		<field name="advertID">21</field>
+		<field name="companyID">2</field>
+		<field name="campaignID">8</field>
+		<field name="form">radio</field>
+	</row>
+	<row>
+		<field name="advertID">22</field>
+		<field name="companyID">3</field>
+		<field name="campaignID">9</field>
+		<field name="form">tv</field>
+	</row>
+	<row>
+		<field name="advertID">23</field>
+		<field name="companyID">6</field>
+		<field name="campaignID">10</field>
+		<field name="form">web</field>
+	</row>
+	<row>
+		<field name="advertID">24</field>
+		<field name="companyID">1</field>
+		<field name="campaignID">10</field>
+		<field name="form">mag</field>
+	</row>
+	<row>
+		<field name="advertID">25</field>
+		<field name="companyID">2</field>
+		<field name="campaignID">10</field>
+		<field name="form">radio</field>
+	</row>
+	</table_data>
+	<table_structure name="campaign">
+		<field Field="campaignID" Type="int(6)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="clientID" Type="int(6)" Null="NO" Key="UNI" Extra="" Comment="" />
+		<field Field="startDate" Type="date" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="endDate" Type="date" Null="NO" Key="" Extra="" Comment="" />
+		<key Table="campaign" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="campaignID" Collation="A" Cardinality="10" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<key Table="campaign" Non_unique="0" Key_name="clientID" Seq_in_index="1" Column_name="clientID" Collation="A" Cardinality="10" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<options Name="campaign" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="10" Avg_row_length="1638" Data_length="16384" Max_data_length="0" Index_length="16384" Data_free="0" Auto_increment="11" Create_time="2019-03-14 15:17:52" Update_time="2019-03-14 15:17:54" Collation="latin1_swedish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="campaign">
+	<row>
+		<field name="campaignID">1</field>
+		<field name="clientID">1</field>
+		<field name="startDate">2018-08-15</field>
+		<field name="endDate">2018-02-15</field>
+	</row>
+	<row>
+		<field name="campaignID">2</field>
+		<field name="clientID">2</field>
+		<field name="startDate">2018-12-24</field>
+		<field name="endDate">2018-06-24</field>
+	</row>
+	<row>
+		<field name="campaignID">3</field>
+		<field name="clientID">3</field>
+		<field name="startDate">2018-04-29</field>
+		<field name="endDate">2018-10-29</field>
+	</row>
+	<row>
+		<field name="campaignID">4</field>
+		<field name="clientID">4</field>
+		<field name="startDate">2018-03-07</field>
+		<field name="endDate">2018-09-07</field>
+	</row>
+	<row>
+		<field name="campaignID">5</field>
+		<field name="clientID">5</field>
+		<field name="startDate">2018-01-17</field>
+		<field name="endDate">2018-07-17</field>
+	</row>
+	<row>
+		<field name="campaignID">6</field>
+		<field name="clientID">6</field>
+		<field name="startDate">2018-01-30</field>
+		<field name="endDate">2019-07-30</field>
+	</row>
+	<row>
+		<field name="campaignID">7</field>
+		<field name="clientID">7</field>
+		<field name="startDate">2018-07-22</field>
+		<field name="endDate">2019-01-22</field>
+	</row>
+	<row>
+		<field name="campaignID">8</field>
+		<field name="clientID">8</field>
+		<field name="startDate">2018-10-14</field>
+		<field name="endDate">2019-04-14</field>
+	</row>
+	<row>
+		<field name="campaignID">9</field>
+		<field name="clientID">9</field>
+		<field name="startDate">2018-05-03</field>
+		<field name="endDate">2018-11-03</field>
+	</row>
+	<row>
+		<field name="campaignID">10</field>
+		<field name="clientID">10</field>
+		<field name="startDate">2018-08-11</field>
+		<field name="endDate">2019-02-11</field>
+	</row>
+	</table_data>
+	<table_structure name="client">
+		<field Field="clientID" Type="int(6)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="personID" Type="int(6)" Null="NO" Key="UNI" Extra="" Comment="" />
+		<field Field="companyID" Type="int(6)" Null="NO" Key="MUL" Extra="" Comment="" />
+		<key Table="client" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="clientID" Collation="A" Cardinality="10" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<key Table="client" Non_unique="0" Key_name="personID" Seq_in_index="1" Column_name="personID" Collation="A" Cardinality="10" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<key Table="client" Non_unique="1" Key_name="companyID" Seq_in_index="1" Column_name="companyID" Collation="A" Cardinality="10" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<options Name="client" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="10" Avg_row_length="1638" Data_length="16384" Max_data_length="0" Index_length="32768" Data_free="0" Auto_increment="11" Create_time="2019-03-14 15:17:52" Update_time="2019-03-14 15:17:54" Collation="latin1_swedish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="client">
+	<row>
+		<field name="clientID">1</field>
+		<field name="personID">11</field>
+		<field name="companyID">1</field>
+	</row>
+	<row>
+		<field name="clientID">2</field>
+		<field name="personID">12</field>
+		<field name="companyID">2</field>
+	</row>
+	<row>
+		<field name="clientID">3</field>
+		<field name="personID">13</field>
+		<field name="companyID">3</field>
+	</row>
+	<row>
+		<field name="clientID">4</field>
+		<field name="personID">14</field>
+		<field name="companyID">4</field>
+	</row>
+	<row>
+		<field name="clientID">5</field>
+		<field name="personID">15</field>
+		<field name="companyID">5</field>
+	</row>
+	<row>
+		<field name="clientID">6</field>
+		<field name="personID">16</field>
+		<field name="companyID">6</field>
+	</row>
+	<row>
+		<field name="clientID">7</field>
+		<field name="personID">17</field>
+		<field name="companyID">7</field>
+	</row>
+	<row>
+		<field name="clientID">8</field>
+		<field name="personID">18</field>
+		<field name="companyID">8</field>
+	</row>
+	<row>
+		<field name="clientID">9</field>
+		<field name="personID">19</field>
+		<field name="companyID">9</field>
+	</row>
+	<row>
+		<field name="clientID">10</field>
+		<field name="personID">20</field>
+		<field name="companyID">10</field>
+	</row>
+	</table_data>
+	<table_structure name="company">
+		<field Field="companyID" Type="int(6)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="name" Type="varchar(30)" Null="NO" Key="" Extra="" Comment="" />
+		<key Table="company" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="companyID" Collation="A" Cardinality="10" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<key Table="company" Non_unique="0" Key_name="companyID" Seq_in_index="1" Column_name="companyID" Collation="A" Cardinality="10" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<options Name="company" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="10" Avg_row_length="1638" Data_length="16384" Max_data_length="0" Index_length="16384" Data_free="0" Auto_increment="11" Create_time="2019-03-14 15:17:51" Update_time="2019-03-14 15:17:54" Collation="latin1_swedish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="company">
+	<row>
+		<field name="companyID">1</field>
+		<field name="name">Vogue</field>
+	</row>
+	<row>
+		<field name="companyID">2</field>
+		<field name="name">Radio 4</field>
+	</row>
+	<row>
+		<field name="companyID">3</field>
+		<field name="name">E4</field>
+	</row>
+	<row>
+		<field name="companyID">4</field>
+		<field name="name">Google</field>
+	</row>
+	<row>
+		<field name="companyID">5</field>
+		<field name="name">Facebook</field>
+	</row>
+	<row>
+		<field name="companyID">6</field>
+		<field name="name">Bobs Builders</field>
+	</row>
+	<row>
+		<field name="companyID">7</field>
+		<field name="name">Asda</field>
+	</row>
+	<row>
+		<field name="companyID">8</field>
+		<field name="name">Tesla</field>
+	</row>
+	<row>
+		<field name="companyID">9</field>
+		<field name="name">Times</field>
+	</row>
+	<row>
+		<field name="companyID">10</field>
+		<field name="name">Programmer Weekly</field>
+	</row>
+	</table_data>
+	<table_structure name="employee">
+		<field Field="employeeID" Type="int(6)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="personID" Type="int(6)" Null="NO" Key="UNI" Extra="" Comment="" />
+		<field Field="workEmail" Type="varchar(30)" Null="NO" Key="UNI" Extra="" Comment="" />
+		<field Field="managerID" Type="int(6)" Null="YES" Key="MUL" Extra="" Comment="" />
+		<key Table="employee" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="employeeID" Collation="A" Cardinality="10" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<key Table="employee" Non_unique="0" Key_name="personID" Seq_in_index="1" Column_name="personID" Collation="A" Cardinality="10" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<key Table="employee" Non_unique="0" Key_name="workEmail" Seq_in_index="1" Column_name="workEmail" Collation="A" Cardinality="10" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<key Table="employee" Non_unique="1" Key_name="managerID" Seq_in_index="1" Column_name="managerID" Collation="A" Cardinality="4" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<options Name="employee" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="10" Avg_row_length="1638" Data_length="16384" Max_data_length="0" Index_length="49152" Data_free="0" Auto_increment="11" Create_time="2019-03-14 15:17:51" Update_time="2019-03-14 15:17:54" Collation="latin1_swedish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="employee">
+	<row>
+		<field name="employeeID">1</field>
+		<field name="personID">1</field>
+		<field name="workEmail">joccaeti@company.com</field>
+		<field name="managerID">8</field>
+	</row>
+	<row>
+		<field name="employeeID">2</field>
+		<field name="personID">2</field>
+		<field name="workEmail">snisi@company.com</field>
+		<field name="managerID">8</field>
+	</row>
+	<row>
+		<field name="employeeID">3</field>
+		<field name="personID">3</field>
+		<field name="workEmail">zdolorum@company.com</field>
+		<field name="managerID">8</field>
+	</row>
+	<row>
+		<field name="employeeID">4</field>
+		<field name="personID">4</field>
+		<field name="workEmail">maut@company.com</field>
+		<field name="managerID">8</field>
+	</row>
+	<row>
+		<field name="employeeID">5</field>
+		<field name="personID">5</field>
+		<field name="workEmail">nveritatis@company.com</field>
+		<field name="managerID">9</field>
+	</row>
+	<row>
+		<field name="employeeID">6</field>
+		<field name="personID">6</field>
+		<field name="workEmail">msaepe@company.com</field>
+		<field name="managerID">9</field>
+	</row>
+	<row>
+		<field name="employeeID">7</field>
+		<field name="personID">7</field>
+		<field name="workEmail">kut@company.com</field>
+		<field name="managerID">9</field>
+	</row>
+	<row>
+		<field name="employeeID">8</field>
+		<field name="personID">8</field>
+		<field name="workEmail">rquibusdam@company.com</field>
+		<field name="managerID">10</field>
+	</row>
+	<row>
+		<field name="employeeID">9</field>
+		<field name="personID">9</field>
+		<field name="workEmail">jdebitis@company.com</field>
+		<field name="managerID">10</field>
+	</row>
+	<row>
+		<field name="employeeID">10</field>
+		<field name="personID">10</field>
+		<field name="workEmail">jet@company.com</field>
+		<field name="managerID" xsi:nil="true" />
+	</row>
+	</table_data>
+	<table_structure name="invoice">
+		<field Field="campaignID" Type="int(6)" Null="NO" Key="PRI" Extra="" Comment="" />
+		<field Field="clientID" Type="int(6)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="cost" Type="int(16)" Null="YES" Key="" Extra="" Comment="" />
+		<key Table="invoice" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="campaignID" Collation="A" Cardinality="10" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<key Table="invoice" Non_unique="0" Key_name="campaignID" Seq_in_index="1" Column_name="campaignID" Collation="A" Cardinality="10" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<options Name="invoice" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="10" Avg_row_length="1638" Data_length="16384" Max_data_length="0" Index_length="16384" Data_free="0" Create_time="2019-03-14 15:17:52" Update_time="2019-03-14 15:17:54" Collation="latin1_swedish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="invoice">
+	<row>
+		<field name="campaignID">1</field>
+		<field name="clientID">1</field>
+		<field name="cost">61</field>
+	</row>
+	<row>
+		<field name="campaignID">2</field>
+		<field name="clientID">2</field>
+		<field name="cost">81</field>
+	</row>
+	<row>
+		<field name="campaignID">3</field>
+		<field name="clientID">3</field>
+		<field name="cost" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="campaignID">4</field>
+		<field name="clientID">4</field>
+		<field name="cost" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="campaignID">5</field>
+		<field name="clientID">5</field>
+		<field name="cost" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="campaignID">6</field>
+		<field name="clientID">6</field>
+		<field name="cost" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="campaignID">7</field>
+		<field name="clientID">7</field>
+		<field name="cost" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="campaignID">8</field>
+		<field name="clientID">8</field>
+		<field name="cost" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="campaignID">9</field>
+		<field name="clientID">9</field>
+		<field name="cost" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="campaignID">10</field>
+		<field name="clientID">10</field>
+		<field name="cost" xsi:nil="true" />
+	</row>
+	</table_data>
+	<table_structure name="magazine">
+		<field Field="advertID" Type="int(6)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="textSize" Type="varchar(16)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="position" Type="varchar(16)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="issues" Type="int(4)" Null="NO" Key="" Extra="" Comment="" />
+		<key Table="magazine" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="advertID" Collation="A" Cardinality="6" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<options Name="magazine" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="6" Avg_row_length="2730" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="25" Create_time="2019-03-14 15:17:53" Update_time="2019-03-14 15:17:54" Collation="latin1_swedish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="magazine">
+	<row>
+		<field name="advertID">1</field>
+		<field name="textSize">large</field>
+		<field name="position">top-right</field>
+		<field name="issues">16</field>
+	</row>
+	<row>
+		<field name="advertID">7</field>
+		<field name="textSize">small</field>
+		<field name="position">middle-center</field>
+		<field name="issues">23</field>
+	</row>
+	<row>
+		<field name="advertID">9</field>
+		<field name="textSize">medium</field>
+		<field name="position">bottom-left</field>
+		<field name="issues">10</field>
+	</row>
+	<row>
+		<field name="advertID">15</field>
+		<field name="textSize">medium</field>
+		<field name="position">middle-left</field>
+		<field name="issues">14</field>
+	</row>
+	<row>
+		<field name="advertID">19</field>
+		<field name="textSize">large</field>
+		<field name="position">custom</field>
+		<field name="issues">19</field>
+	</row>
+	<row>
+		<field name="advertID">24</field>
+		<field name="textSize">small</field>
+		<field name="position">top-left</field>
+		<field name="issues">7</field>
+	</row>
+	</table_data>
+	<table_structure name="personalinfo">
+		<field Field="personID" Type="int(6)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="firstName" Type="varchar(15)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="secondName" Type="varchar(20)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="emailAddress" Type="varchar(30)" Null="NO" Key="UNI" Extra="" Comment="" />
+		<field Field="phoneNumber" Type="int(20)" Null="NO" Key="" Extra="" Comment="" />
+		<key Table="personalinfo" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="personID" Collation="A" Cardinality="20" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<key Table="personalinfo" Non_unique="0" Key_name="personID" Seq_in_index="1" Column_name="personID" Collation="A" Cardinality="20" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<key Table="personalinfo" Non_unique="0" Key_name="emailAddress" Seq_in_index="1" Column_name="emailAddress" Collation="A" Cardinality="20" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<options Name="personalinfo" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="20" Avg_row_length="819" Data_length="16384" Max_data_length="0" Index_length="32768" Data_free="0" Auto_increment="21" Create_time="2019-03-14 15:17:51" Update_time="2019-03-14 15:17:54" Collation="latin1_swedish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="personalinfo">
+	<row>
+		<field name="personID">1</field>
+		<field name="firstName">Jarrett</field>
+		<field name="secondName">occaecati</field>
+		<field name="emailAddress">ebahringer@example.org</field>
+		<field name="phoneNumber">131323</field>
+	</row>
+	<row>
+		<field name="personID">2</field>
+		<field name="firstName">Sterling</field>
+		<field name="secondName">nisi</field>
+		<field name="emailAddress">ffritsch@example.org</field>
+		<field name="phoneNumber">2123</field>
+	</row>
+	<row>
+		<field name="personID">3</field>
+		<field name="firstName">Zack</field>
+		<field name="secondName">dolorum</field>
+		<field name="emailAddress">isadore.ruecker@example.org</field>
+		<field name="phoneNumber">58293</field>
+	</row>
+	<row>
+		<field name="personID">4</field>
+		<field name="firstName">Mossie</field>
+		<field name="secondName">aut</field>
+		<field name="emailAddress">treutel.celestino@example.org</field>
+		<field name="phoneNumber">239385</field>
+	</row>
+	<row>
+		<field name="personID">5</field>
+		<field name="firstName">Nico</field>
+		<field name="secondName">veritatis</field>
+		<field name="emailAddress">mwunsch@example.net</field>
+		<field name="phoneNumber">29386</field>
+	</row>
+	<row>
+		<field name="personID">6</field>
+		<field name="firstName">Micah</field>
+		<field name="secondName">saepe</field>
+		<field name="emailAddress">mohammed.welch@example.com</field>
+		<field name="phoneNumber">98765</field>
+	</row>
+	<row>
+		<field name="personID">7</field>
+		<field name="firstName">Keeley</field>
+		<field name="secondName">ut</field>
+		<field name="emailAddress">wboyer@example.com</field>
+		<field name="phoneNumber">48705</field>
+	</row>
+	<row>
+		<field name="personID">8</field>
+		<field name="firstName">Rebecca</field>
+		<field name="secondName">quibusdam</field>
+		<field name="emailAddress">jaqueline.quigley@example.com</field>
+		<field name="phoneNumber">847665</field>
+	</row>
+	<row>
+		<field name="personID">9</field>
+		<field name="firstName">Jay</field>
+		<field name="secondName">debitis</field>
+		<field name="emailAddress">cquigley@example.org</field>
+		<field name="phoneNumber">23846</field>
+	</row>
+	<row>
+		<field name="personID">10</field>
+		<field name="firstName">Jaquelin</field>
+		<field name="secondName">et</field>
+		<field name="emailAddress">keaton.mcclure@example.com</field>
+		<field name="phoneNumber">7554</field>
+	</row>
+	<row>
+		<field name="personID">11</field>
+		<field name="firstName">Brittany</field>
+		<field name="secondName">consequatur</field>
+		<field name="emailAddress">austyn17@example.com</field>
+		<field name="phoneNumber">10639</field>
+	</row>
+	<row>
+		<field name="personID">12</field>
+		<field name="firstName">Mariela</field>
+		<field name="secondName">dolor</field>
+		<field name="emailAddress">juvenal.wintheiser@example.org</field>
+		<field name="phoneNumber">647930</field>
+	</row>
+	<row>
+		<field name="personID">13</field>
+		<field name="firstName">Rosalia</field>
+		<field name="secondName">voluptatem</field>
+		<field name="emailAddress">noah.turner@example.com</field>
+		<field name="phoneNumber">388704</field>
+	</row>
+	<row>
+		<field name="personID">14</field>
+		<field name="firstName">Hazle</field>
+		<field name="secondName">praesentium</field>
+		<field name="emailAddress">schneider.berneice@example.org</field>
+		<field name="phoneNumber">94960</field>
+	</row>
+	<row>
+		<field name="personID">15</field>
+		<field name="firstName">Edwardo</field>
+		<field name="secondName">praesentium</field>
+		<field name="emailAddress">quentin64@example.org</field>
+		<field name="phoneNumber">92943</field>
+	</row>
+	<row>
+		<field name="personID">16</field>
+		<field name="firstName">Heather</field>
+		<field name="secondName">sequi</field>
+		<field name="emailAddress">okunde@example.net</field>
+		<field name="phoneNumber">238749</field>
+	</row>
+	<row>
+		<field name="personID">17</field>
+		<field name="firstName">Eleanore</field>
+		<field name="secondName">error</field>
+		<field name="emailAddress">vmitchell@example.org</field>
+		<field name="phoneNumber">42942</field>
+	</row>
+	<row>
+		<field name="personID">18</field>
+		<field name="firstName">Dena</field>
+		<field name="secondName">omnis</field>
+		<field name="emailAddress">price12@example.net</field>
+		<field name="phoneNumber">2134</field>
+	</row>
+	<row>
+		<field name="personID">19</field>
+		<field name="firstName">Emmalee</field>
+		<field name="secondName">odit</field>
+		<field name="emailAddress">santiago.bogisich@example.com</field>
+		<field name="phoneNumber">38286</field>
+	</row>
+	<row>
+		<field name="personID">20</field>
+		<field name="firstName">June</field>
+		<field name="secondName">qui</field>
+		<field name="emailAddress">qwilkinson@example.net</field>
+		<field name="phoneNumber">899687</field>
+	</row>
+	</table_data>
+	<table_structure name="tvradio">
+		<field Field="advertID" Type="int(6)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="slot" Type="time" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="runTime" Type="int(5)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="broadcastingNo" Type="int(4)" Null="NO" Key="" Extra="" Comment="" />
+		<key Table="tvradio" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="advertID" Collation="A" Cardinality="14" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<options Name="tvradio" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="14" Avg_row_length="1170" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="26" Create_time="2019-03-14 15:17:53" Update_time="2019-03-14 15:17:54" Collation="latin1_swedish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="tvradio">
+	<row>
+		<field name="advertID">3</field>
+		<field name="slot">07:00:00</field>
+		<field name="runTime">120</field>
+		<field name="broadcastingNo">12</field>
+	</row>
+	<row>
+		<field name="advertID">4</field>
+		<field name="slot">10:00:00</field>
+		<field name="runTime">60</field>
+		<field name="broadcastingNo">15</field>
+	</row>
+	<row>
+		<field name="advertID">5</field>
+		<field name="slot">10:00:00</field>
+		<field name="runTime">40</field>
+		<field name="broadcastingNo">31</field>
+	</row>
+	<row>
+		<field name="advertID">6</field>
+		<field name="slot">13:00:00</field>
+		<field name="runTime">120</field>
+		<field name="broadcastingNo">35</field>
+	</row>
+	<row>
+		<field name="advertID">10</field>
+		<field name="slot">12:00:00</field>
+		<field name="runTime">120</field>
+		<field name="broadcastingNo">9</field>
+	</row>
+	<row>
+		<field name="advertID">12</field>
+		<field name="slot">07:00:00</field>
+		<field name="runTime">60</field>
+		<field name="broadcastingNo">23</field>
+	</row>
+	<row>
+		<field name="advertID">13</field>
+		<field name="slot">23:00:00</field>
+		<field name="runTime">100</field>
+		<field name="broadcastingNo">10</field>
+	</row>
+	<row>
+		<field name="advertID">16</field>
+		<field name="slot">17:00:00</field>
+		<field name="runTime">120</field>
+		<field name="broadcastingNo">12</field>
+	</row>
+	<row>
+		<field name="advertID">17</field>
+		<field name="slot">06:00:00</field>
+		<field name="runTime">20</field>
+		<field name="broadcastingNo">17</field>
+	</row>
+	<row>
+		<field name="advertID">18</field>
+		<field name="slot">09:00:00</field>
+		<field name="runTime">40</field>
+		<field name="broadcastingNo">9</field>
+	</row>
+	<row>
+		<field name="advertID">20</field>
+		<field name="slot">17:00:00</field>
+		<field name="runTime">120</field>
+		<field name="broadcastingNo">40</field>
+	</row>
+	<row>
+		<field name="advertID">21</field>
+		<field name="slot">21:00:00</field>
+		<field name="runTime">120</field>
+		<field name="broadcastingNo">25</field>
+	</row>
+	<row>
+		<field name="advertID">22</field>
+		<field name="slot">20:00:00</field>
+		<field name="runTime">20</field>
+		<field name="broadcastingNo">27</field>
+	</row>
+	<row>
+		<field name="advertID">25</field>
+		<field name="slot">22:00:00</field>
+		<field name="runTime">100</field>
+		<field name="broadcastingNo">36</field>
+	</row>
+	</table_data>
+	<table_structure name="web">
+		<field Field="advertID" Type="int(6)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="demographic" Type="varchar(32)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="region" Type="varchar(64)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="views" Type="int(8)" Null="NO" Key="" Extra="" Comment="" />
+		<key Table="web" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="advertID" Collation="A" Cardinality="5" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<options Name="web" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="5" Avg_row_length="3276" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="24" Create_time="2019-03-14 15:17:53" Update_time="2019-03-14 15:17:54" Collation="latin1_swedish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="web">
+	<row>
+		<field name="advertID">2</field>
+		<field name="demographic">16-30</field>
+		<field name="region">America</field>
+		<field name="views">100</field>
+	</row>
+	<row>
+		<field name="advertID">8</field>
+		<field name="demographic">35-65</field>
+		<field name="region">America</field>
+		<field name="views">100</field>
+	</row>
+	<row>
+		<field name="advertID">11</field>
+		<field name="demographic">&gt;15</field>
+		<field name="region">UK</field>
+		<field name="views">100</field>
+	</row>
+	<row>
+		<field name="advertID">14</field>
+		<field name="demographic">&lt;15</field>
+		<field name="region">FRANCE</field>
+		<field name="views">100</field>
+	</row>
+	<row>
+		<field name="advertID">23</field>
+		<field name="demographic">20-65</field>
+		<field name="region">CANADA</field>
+		<field name="views">100</field>
+	</row>
+	</table_data>
+	<table_structure name="workdone">
+		<field Field="campaignID" Type="int(6)" Null="NO" Key="PRI" Extra="" Comment="" />
+		<field Field="employeeID" Type="int(6)" Null="NO" Key="PRI" Extra="" Comment="" />
+		<field Field="hoursWorked" Type="int(4)" Null="NO" Key="" Extra="" Comment="" />
+		<key Table="workdone" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="campaignID" Collation="A" Cardinality="10" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<key Table="workdone" Non_unique="0" Key_name="PRIMARY" Seq_in_index="2" Column_name="employeeID" Collation="A" Cardinality="29" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<options Name="workdone" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="29" Avg_row_length="564" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Create_time="2019-03-14 15:17:53" Update_time="2019-03-14 15:17:54" Collation="latin1_swedish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="workdone">
+	<row>
+		<field name="campaignID">1</field>
+		<field name="employeeID">1</field>
+		<field name="hoursWorked">12</field>
+	</row>
+	<row>
+		<field name="campaignID">1</field>
+		<field name="employeeID">5</field>
+		<field name="hoursWorked">21</field>
+	</row>
+	<row>
+		<field name="campaignID">1</field>
+		<field name="employeeID">7</field>
+		<field name="hoursWorked">4</field>
+	</row>
+	<row>
+		<field name="campaignID">1</field>
+		<field name="employeeID">10</field>
+		<field name="hoursWorked">7</field>
+	</row>
+	<row>
+		<field name="campaignID">2</field>
+		<field name="employeeID">3</field>
+		<field name="hoursWorked">30</field>
+	</row>
+	<row>
+		<field name="campaignID">2</field>
+		<field name="employeeID">9</field>
+		<field name="hoursWorked">28</field>
+	</row>
+	<row>
+		<field name="campaignID">3</field>
+		<field name="employeeID">2</field>
+		<field name="hoursWorked">7</field>
+	</row>
+	<row>
+		<field name="campaignID">3</field>
+		<field name="employeeID">4</field>
+		<field name="hoursWorked">20</field>
+	</row>
+	<row>
+		<field name="campaignID">3</field>
+		<field name="employeeID">6</field>
+		<field name="hoursWorked">16</field>
+	</row>
+	<row>
+		<field name="campaignID">3</field>
+		<field name="employeeID">8</field>
+		<field name="hoursWorked">18</field>
+	</row>
+	<row>
+		<field name="campaignID">4</field>
+		<field name="employeeID">5</field>
+		<field name="hoursWorked">50</field>
+	</row>
+	<row>
+		<field name="campaignID">5</field>
+		<field name="employeeID">3</field>
+		<field name="hoursWorked">24</field>
+	</row>
+	<row>
+		<field name="campaignID">5</field>
+		<field name="employeeID">8</field>
+		<field name="hoursWorked">30</field>
+	</row>
+	<row>
+		<field name="campaignID">6</field>
+		<field name="employeeID">1</field>
+		<field name="hoursWorked">23</field>
+	</row>
+	<row>
+		<field name="campaignID">6</field>
+		<field name="employeeID">2</field>
+		<field name="hoursWorked">10</field>
+	</row>
+	<row>
+		<field name="campaignID">6</field>
+		<field name="employeeID">4</field>
+		<field name="hoursWorked">18</field>
+	</row>
+	<row>
+		<field name="campaignID">6</field>
+		<field name="employeeID">9</field>
+		<field name="hoursWorked">30</field>
+	</row>
+	<row>
+		<field name="campaignID">6</field>
+		<field name="employeeID">10</field>
+		<field name="hoursWorked">10</field>
+	</row>
+	<row>
+		<field name="campaignID">7</field>
+		<field name="employeeID">5</field>
+		<field name="hoursWorked">13</field>
+	</row>
+	<row>
+		<field name="campaignID">7</field>
+		<field name="employeeID">6</field>
+		<field name="hoursWorked">15</field>
+	</row>
+	<row>
+		<field name="campaignID">8</field>
+		<field name="employeeID">3</field>
+		<field name="hoursWorked">20</field>
+	</row>
+	<row>
+		<field name="campaignID">8</field>
+		<field name="employeeID">7</field>
+		<field name="hoursWorked">15</field>
+	</row>
+	<row>
+		<field name="campaignID">8</field>
+		<field name="employeeID">10</field>
+		<field name="hoursWorked">5</field>
+	</row>
+	<row>
+		<field name="campaignID">9</field>
+		<field name="employeeID">1</field>
+		<field name="hoursWorked">20</field>
+	</row>
+	<row>
+		<field name="campaignID">9</field>
+		<field name="employeeID">2</field>
+		<field name="hoursWorked">20</field>
+	</row>
+	<row>
+		<field name="campaignID">10</field>
+		<field name="employeeID">4</field>
+		<field name="hoursWorked">12</field>
+	</row>
+	<row>
+		<field name="campaignID">10</field>
+		<field name="employeeID">5</field>
+		<field name="hoursWorked">23</field>
+	</row>
+	<row>
+		<field name="campaignID">10</field>
+		<field name="employeeID">7</field>
+		<field name="hoursWorked">28</field>
+	</row>
+	<row>
+		<field name="campaignID">10</field>
+		<field name="employeeID">9</field>
+		<field name="hoursWorked">14</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>
