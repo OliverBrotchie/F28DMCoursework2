@@ -19,11 +19,112 @@
         <xs:sequence>
                 <xs:element name="campaignID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
                 <xs:element name="clientID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
-                <xs:element name="startDarte" type="xs:date" maxOccurs="1"/>
+                <xs:element name="startDarte" type="xs:date"/>
                 <xs:element name="endDate" type="xs:date" maxOccurs="unbounded"/>
             </xs:sequence>
         <xs:keyref id="campaign" name="campaignID" refer="campaign"/>
         <xs:keyref id="client" name="clientID" refer="client"/>
+    </xs:complexType>
+    </xs:element>
+    <xs:element name="client" maxOccurs="unbounded">
+    <xs:complexType>
+        <xs:sequence>
+                <xs:element name="clientID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="personID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="companyID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+        <xs:keyref id="client" name="clientID" refer="client"/>
+        <xs:keyref id="person" name="personID" refer="personalinfo"/>
+        <xs:keyref id="client" name="clientID" refer="client"/>
+    </xs:complexType>
+    </xs:element>
+    <xs:element name="company" maxOccurs="unbounded">
+    <xs:complexType>
+        <xs:sequence>
+                <xs:element name="companyID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="name" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+        <xs:keyref id="company" name="companyID" refer="company"/>
+    </xs:complexType>
+    </xs:element>
+    <xs:element name="employee" maxOccurs="unbounded">
+    <xs:complexType>
+        <xs:sequence>
+                <xs:element name="employeeID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="personID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="workEmail" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="managerID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+        <xs:keyref id="employee" name="employeeID" refer="employee"/>
+        <xs:keyref id="person" name="personID" refer="personalinfo"/>
+        <xs:keyref id="manager" name="managerID" refer="employee"/>
+    </xs:complexType>
+    </xs:element>
+    <xs:element name="invoice" maxOccurs="unbounded">
+    <xs:complexType>
+        <xs:sequence>
+                <xs:element name="campaignID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="clientID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="cost" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+        <xs:keyref id="campaign" name="campaignID" refer="campaign"/>
+        <xs:keyref id="client" name="clientID" refer="client"/>
+    </xs:complexType>
+    </xs:element>
+    <xs:element name="magazine" maxOccurs="unbounded">
+    <xs:complexType>
+        <xs:sequence>
+                <xs:element name="advertID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="textsize" type="xs:string"  maxOccurs="unbounded"/>
+                <xs:element name="position" type="xs:string"  maxOccurs="unbounded"/>
+                <xs:element name="issues" type="xs:positiveInteger" maxOccurs="unbounded"/>
+            </xs:sequence>
+        <xs:keyref id="advert" name="advertID" refer="advert"/>
+    </xs:complexType>
+    </xs:element>
+    <xs:element name="personalinfo" maxOccurs="unbounded">
+    <xs:complexType>
+        <xs:sequence>
+                <xs:element name="personID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="firstName" type="xs:string" maxOccurs="unbounded"/>
+                <xs:element name="secondName" type="xs:string" maxOccurs="unbounded"/>
+                <xs:element name="emailAddress" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="phoneNumber" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+        <xs:keyref id="person" name="personID" refer="personalinfo"/>
+    </xs:complexType>
+    </xs:element>
+    <xs:element name="tvradio" maxOccurs="unbounded">
+    <xs:complexType>
+        <xs:sequence>
+                <xs:element name="advertID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="slot" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="runTime" type="xs:positiveInteger" maxOccurs="unbounded"/>
+                <xs:element name="broadcastNo" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+        <xs:keyref id="advert" name="advertID" refer="advert"/>
+    </xs:complexType>
+    </xs:element>
+    <xs:element name="web" maxOccurs="unbounded">
+    <xs:complexType>
+        <xs:sequence>
+                <xs:element name="advertID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="demographic" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="region" type="xs:positiveInteger" maxOccurs="unbounded"/>
+                <xs:element name="views" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+        <xs:keyref id="advert" name="advertID" refer="advert"/>
+    </xs:complexType>
+    </xs:element>
+     <xs:element name="workdone" maxOccurs="unbounded">
+    <xs:complexType>
+        <xs:sequence>
+                <xs:element name="campaignID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="employeeID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="hoursworked" type="xs:positiveInteger" maxOccurs="unbounded"/>
+            </xs:sequence>
+        <xs:keyref id="campaign" name="campaignID" refer="campaign"/>
+        <xs:keyref id="employee" name="employeeID" refer="employee"/>
     </xs:complexType>
     </xs:element>
 </xs:schema>
