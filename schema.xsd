@@ -4,25 +4,25 @@
     <xs:element name="advert" maxOccurs="unbounded">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="advertID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
-                <xs:element name="personID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
-                <xs:element name="companyID" type="xs:positiveInteger" minOccus="1" maxOccurs="1"/>
+                <xs:element name="advertID" type="xs:positiveInteger" maxOccurs="1"/>
+                <xs:element name="campaignID" type="xs:positiveInteger" maxOccurs="unbounded"/>
+                <xs:element name="companyID" type="xs:positiveInteger" maxOccurs="unbounded"/>
                 <xs:element name="form" type="xs:string" maxOccurs="unbounded"/>
             </xs:sequence>
-        <xs:keyref id="advert" name="advertID" refer="advert"/>
-        <xs:keyref id="person" name="personID" refer="person"/>
+        <xs:key id="advertID" name="advertID"/>
+        <xs:keyref name="campaignID" refer="campaign"/>
         <xs:keyref id="company" name="companyID" refer="company"/>
         </xs:complexType>
     </xs:element> 
     <xs:element name="campaign" maxOccurs="unbounded">
     <xs:complexType>
         <xs:sequence>
-                <xs:element name="campaignID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
-                <xs:element name="clientID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
-                <xs:element name="startDarte" type="xs:date"/>
+                <xs:element name="campaignID" type="xs:positiveInteger" maxOccurs="1"/>
+                <xs:element name="clientID" type="xs:positiveInteger" maxOccurs="unbounded"/>
+                <xs:element name="startDarte" type="xs:date" maxOccurs="unbounded"/>
                 <xs:element name="endDate" type="xs:date" maxOccurs="unbounded"/>
             </xs:sequence>
-        <xs:keyref id="campaign" name="campaignID" refer="campaign"/>
+        <xs:key id="campaign" name="campaignID" refer="campaign"/>
         <xs:keyref id="client" name="clientID" refer="client"/>
     </xs:complexType>
     </xs:element>
@@ -31,7 +31,7 @@
         <xs:sequence>
                 <xs:element name="clientID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
                 <xs:element name="personID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
-                <xs:element name="companyID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="companyID" type="xs:positiveInteger" maxOccurs="unbounded"/>
             </xs:sequence>
         <xs:keyref id="client" name="clientID" refer="client"/>
         <xs:keyref id="person" name="personID" refer="personalinfo"/>
