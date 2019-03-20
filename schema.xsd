@@ -7,7 +7,16 @@
                 <xs:element name="advertID" type="xs:positiveInteger" maxOccurs="1"/>
                 <xs:element name="campaignID" type="xs:positiveInteger" maxOccurs="unbounded"/>
                 <xs:element name="companyID" type="xs:positiveInteger" maxOccurs="unbounded"/>
-                <xs:element name="form" type="xs:string" maxOccurs="unbounded"/>
+                <xs:element name="form" type="xs:string" maxOccurs="unbounded">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="web"/>
+                            <xs:enumeration value="mag"/>
+                            <xs:enumeration value="tv"/>
+                            <xs:enumeration value="radio"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
             </xs:sequence>
         <xs:key id="advertID" name="advertID"/>
         <xs:keyref name="campaignID" refer="campaign"/>
@@ -75,8 +84,30 @@
     <xs:complexType>
         <xs:sequence>
                 <xs:element name="advertID" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
-                <xs:element name="textsize" type="xs:string"  maxOccurs="unbounded"/>
-                <xs:element name="position" type="xs:string"  maxOccurs="unbounded"/>
+                <xs:element name="textsize" type="xs:string"  maxOccurs="unbounded">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="small"/>
+                            <xs:enumeration value="medium"/>
+                            <xs:enumeration value="large"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="position" type="xs:string"  maxOccurs="unbounded">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="top-right"/>
+                            <xs:enumeration value="top-center"/>
+                            <xs:enumeration value="top-left"/>
+                            <xs:enumeration value="middle-right"/>
+                            <xs:enumeration value="middle-center"/>
+                            <xs:enumeration value="middle-left"/>
+                            <xs:enumeration value="bottom-right"/>
+                            <xs:enumeration value="bottom-center"/>
+                            <xs:enumeration value="bottom-left"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
                 <xs:element name="issues" type="xs:positiveInteger" maxOccurs="unbounded"/>
             </xs:sequence>
         <xs:keyref id="advert" name="advertID" refer="advert"/>
